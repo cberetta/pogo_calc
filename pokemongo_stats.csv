@@ -604,8 +604,8 @@ Pokemon Num,Name,Name Bis,Stamina,Attack,Defense
 #554G,Darumaka,Darumaka (Galarian Form),172,153,86
 #555,Darmanitan,Darmanitan (Standard Mode),233,263,114
 #555Z,Darmanitan,Darmanitan (Zen Mode),233,243,202
-#555G,Darmanitan,Darmanitan (Galarian Form, Standard Mode),233,263,114
-#555GZ,Darmanitan,Darmanitan (Galarian Form, Zen Mode),233,323,123
+#555G,Darmanitan,Darmanitan (Galarian Form - Standard Mode),233,263,114
+#555GZ,Darmanitan,Darmanitan (Galarian Form - Zen Mode),233,323,123
 #556,Maractus,Maractus,181,201,130
 #557,Dwebble,Dwebble,137,118,128
 #558,Crustle,Crustle,172,188,200
