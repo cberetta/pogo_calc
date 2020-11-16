@@ -57,9 +57,9 @@ print("Start time.......: {0}".format(datetime.datetime.now().strftime('%d/%m_%H
 print("Total cpm/levl...: {0}".format(len(pokemon_cpm)))
 print("Total pokemons...: {0}".format(len(pokemons)))
 
-pokemon_stats = []
 # pokemon
 for p in pokemons:
+	pokemon_stats = []
 	# attack
 	for a in range(0,16):
 		# defense
