@@ -92,7 +92,7 @@ for p in pokemons:
 	# Sort dict and search for max stats
 	max_stats_mega = 0
 	max_stats_ultra = 0
-	with open("pogo_stats_max.out", 'w') as f:
+	with open("pogo_stats_max.out", 'a+') as f:
 		for s in sorted(pokemon_stats, key=lambda x: (x.CP, x.Stats), reverse=True):
 			if (max_stats_mega == 0) and (s.CP >= 1400) and (s.CP <= 1500):
 				max_stats_mega = s.Stats
@@ -102,7 +102,7 @@ for p in pokemons:
 			f.write("{0},{1},{2}\n".format(s.Num, max_stats_mega, max_stats_ultra))
 
 	# Write to file
-	with open("pogo_stats.out", 'w') as f:
+	with open("pogo_stats.out", 'a+') as f:
 		for s in sorted(pokemon_stats, key=lambda x: (x.Stats, x.CP), reverse=True):
 			perc_mega = 0
 			perc_ultra = 0
@@ -124,6 +124,8 @@ for p in pokemons:
 					perc_ultra)
 				f.write(txt + "\n")
 				#print(txt)
+
+	print("Pokemon {0:>7} : {1}".format(p.Num, datetime.datetime.now().strftime('%d/%m_%H:%M:%S')))
 
 print("End time.........: {0}".format(datetime.datetime.now().strftime('%d/%m_%H:%M:%S')))
 
